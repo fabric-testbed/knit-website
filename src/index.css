@@ -1,0 +1,75 @@
+ @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;700&family=Montserrat:wght@900&display=swap');
+
+:root {
+    --color-primary: #47aae1;
+    --color-primary-light: #cde4ef;
+    --color-primary-dark: #077ab1;
+    --color-secondary: #ff8542;
+    --color-secondary-light: #ffa562;
+    --color-secondary-dark: #d24502;
+    --color-dark: #534f50;
+    --color-black:  #231f20;
+    --color-grey: #667;
+    --color-lightgrey: #e3e3e9;
+    --color-light: #f3f3f9;
+    --color-white: #ffffff;
+    --color-danger: #a33;
+    
+    --font-brand: 'Montserrat';
+    --font-primary: "IBM Plex Sans", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-heading: 'Montserrat';
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 300;
+  font-size: 13pt;
+}
+
+#root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+/* 
+@media (prefers-color-scheme: dark) {
+  #root {
+    background-color: #000;
+    color: #fff;
+  }
+}
+ */
+
+ main {
+  width: 100%;
+  margin: auto;
+  padding: 1rem 2rem;
+  flex: 1;
+  background: repeating-linear-gradient(
+    140deg,
+    #f9f6f3,
+    #f9f6f3 50vmax,
+    #eaebec 50vmax,
+    #eaebec 150vmax
+  );
+  background-attachment: fixed;
+}
+
+a {
+  color: var(--color-renci);
+  transition: filter 250ms;
+}
+
+
+a:hover {
+  filter: brightness(1.5);
+}
