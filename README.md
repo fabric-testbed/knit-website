@@ -2,9 +2,9 @@
 
 This website serves as the single location to promote information about FABRIC's KNIT events, which are held twice a year.
 
-This website is a React application based off of [https://github.com/renci/react-starter].
+This website is a React application based off of [RENCI/react-starter](https://github.com/renci/react-starter).
 
-### 🚀 Getting Started
+## 🚀 Getting Started
 
 ### 🚧 Application Development
 
@@ -18,7 +18,7 @@ To build a production-ready bundle, run `npm run build` from the project root di
 
 A Dockerfile lives in this repo to help get started with containerized deployment.
 It is a multi-stage build that results in an bitnami/NGINX image that only serves this application.
-Note that this Dockerfile is Sterling-ready.
+Note that the resulting image is Sterling-ready.
 
 The command to build an image might look something like the following.
 ```

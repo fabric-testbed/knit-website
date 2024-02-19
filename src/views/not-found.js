@@ -1,9 +1,11 @@
-import { Fragment } from 'react'
+import { Page } from '@components/layout'
 
 export const NotFoundView = () => {
   return (
-    <Fragment>
+    <Page
+      title="Not Found"
+    >
       <h1>404: Not Found</h1>
-    </Fragment>
+    </Page>
   )
 }

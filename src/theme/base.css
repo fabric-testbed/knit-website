@@ -1,0 +1,40 @@
+ @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;700&family=Montserrat:wght@400&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 13pt;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+main {
+  width: 100%;
+  margin: auto;
+  padding: 1rem 2rem;
+  flex: 1;
+  background: repeating-linear-gradient(
+    140deg,
+    #f9f6f3,
+    #f9f6f3 50vmax,
+    #eaebec 52vmax,
+    #eaebec 150vmax
+  );
+  background-attachment: fixed;
+}

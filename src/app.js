@@ -1,14 +1,17 @@
 import { Fragment } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { Menu } from './components/menu'
+import { Menu } from '@components/menu'
 import {
-  AboutView,
+  CfpView,
   HomeView,
+  MarkdownView,
   NotFoundView,
+  RegistrationView,
+  SpeakersView,
+  TravelView,
 } from './views'
 
-import { Header } from './components/header'
-import { Footer } from './components/footer'
+import { Header, Footer } from '@components/layout'
 
 const menuOptions = [
   {
@@ -17,9 +20,24 @@ const menuOptions = [
     view: <HomeView />,
   },
   {
-    path: '/about',
-    label: 'About',
-    view: <AboutView />,
+    path: '/registration',
+    label: 'Registration',
+    view: <RegistrationView />,
+  },
+  {
+    path: '/cfp',
+    label: 'CFP',
+    view: <CfpView />,
+  },
+  {
+    path: '/travel',
+    label: 'Travel Info',
+    view: <TravelView />,
+  },
+  {
+    path: '/speakers',
+    label: 'Speakers',
+    view: <SpeakersView />,
   },
 ]
 
@@ -44,6 +62,7 @@ export const App = () => {
               />
             ))
           }
+          <Route path="__markdown" element={ <MarkdownView /> } />
           <Route path="*" element={ <NotFoundView /> } />
         </Routes>
       </main>

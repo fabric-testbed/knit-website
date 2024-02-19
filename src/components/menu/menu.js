@@ -1,30 +1,50 @@
 import PropTypes from 'prop-types'
-import { Link } from '../link'
-import classes from './menu.module.css'
+import { Sheet } from '@mui/joy'
+import { useTheme } from '@mui/joy/styles'
+import { DrawerMenu } from './drawer-menu'
+import { DesktopMenu } from './desktop-menu'
+import useResizeObserver from 'use-resize-observer'
 
 //
 
-export const Menu = ({ options }) => {
+export const Menu = ({ options = [] }) => {
+  const { ref, width = 1 } = useResizeObserver()
+  const theme = useTheme()
+
   return (
-    <ul className={ classes.mainNavigation } role="navigation">
+    <Sheet
+      ref={ ref }
+      sx={{
+        backgroundColor: 'var(--knit-palette-common-white)',
+        display: 'flex',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        height: '60px',
+        border: 'solid var(--knit-palette-primary-700)',
+        borderWidth: '1px 0',
+        position: 'sticky',
+        top: 0,
+        overflow: 'hidden',
+        zIndex: 9,
+      }}
+    >
       {
-        options.map(({ label, path }) => (
-          <li key={ path }>
-            <Link nav to={ path }>{ label }</Link>
-          </li>
-        ))
+        width < theme.breakpoints.values.sm
+          ? <DrawerMenu options={ options } />
+          : <DesktopMenu options={ options } />
       }
-    </ul>
+    </Sheet>
   )
 }
 
-export const menuOptionsPropTypes = PropTypes.arrayOf(
+
+
+
+export const menuPropTypes = PropTypes.arrayOf(
   PropTypes.shape({
     label: PropTypes.string.isRequired,
     path: PropTypes.string.isRequired,
   }).isRequired,
 ).isRequired
 
-Menu.propTypes = {
-  options: menuOptionsPropTypes,
-}
+Menu.propTypes = { ...menuPropTypes }
