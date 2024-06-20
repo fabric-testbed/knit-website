@@ -1,73 +1,6 @@
-import { Fragment } from 'react'
 import PropTypes from 'prop-types'
-import { Link as ReactLink } from 'react-router-dom'
-import { NavLink as ReactNavLink } from 'react-router-dom'
 
-//
-
-export const ExternalLink = ({ to, children }) => {
-  return (
-    <Fragment>
-      <a
-        href={ to }
-        target="_blank"
-        rel="noopener noreferrer"
-      >{ children }</a>
-      <ExternalLinkIcon />
-    </Fragment>
-  )
-}
-
-export const MailtoLink = ({ to, children }) => {
-  return (
-    <Fragment>
-      <a href={ to }>{ children }</a>
-      <MailtoLinkIcon />
-    </Fragment>
-  )
-}
-
-const BaseLinkPropTypes = {
-  to: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
-}
-
-ExternalLink.propTypes = { ...BaseLinkPropTypes }
-MailtoLink.propTypes = { ...BaseLinkPropTypes }
-
-//
-
-export const Link = ({ nav, to, children, ...props }) => {
-  // if this is a navigation menu link, we can bail out now.
-  if (nav) {
-    return <ReactNavLink to={ to } { ...props }>{ children }</ReactNavLink>    
-  }
-  // otherwise, we'll to determine the type of link and
-  // decorate it with an icon accordingly.
-  const externalUrlPattern = new RegExp(/^https?:\/\//)
-  const externalUrlMatch = externalUrlPattern.exec(to)
-  const mailtoPattern = new RegExp(/^mailto:/)
-  const mailtoMatch = mailtoPattern.exec(to)
-  const LinkComponent = externalUrlMatch
-    ? ExternalLink
-      : mailtoMatch
-        ? MailtoLink
-        : ReactLink
-  return <LinkComponent to={to} { ...props }>{children}</LinkComponent>
-}
-
-Link.propTypes = {
-  nav: PropTypes.bool,
-  ...BaseLinkPropTypes
-}
-
-Link.defaultProps = {
-  nav: false,
-}
-
-//
-
-const LinkIcon = ({ size, children }) => {
+export const LinkIcon = ({ size, children }) => {
   return (
     <svg
       focusable="false"
@@ -98,16 +31,16 @@ export const ExternalLinkIcon = ({ size = 10 }) => {
   )
 }
 
+ExternalLinkIcon.propTypes = {
+  size: PropTypes.number,
+}
+
 export const MailtoLinkIcon = ({ size = 12 }) => {
   return (
     <LinkIcon size={ size }>
       <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"></path>
     </LinkIcon>
   )
-}
-
-ExternalLinkIcon.propTypes = {
-  size: PropTypes.number,
 }
 
 MailtoLinkIcon.propTypes = {
