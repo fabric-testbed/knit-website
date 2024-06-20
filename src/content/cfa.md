@@ -22,4 +22,4 @@ Incididunt id aliquip cillum in aliqua quis qui mollit exercitation in laborum. 
 
 <button linkTo="https://renci.org/" center="true">Call for Presentations</button>
 
-For more questions, email [Chelsea Davis](cdavis@renci.org)
+For more questions, email [Chelsea Davis](mailto:cdavis@renci.org)
