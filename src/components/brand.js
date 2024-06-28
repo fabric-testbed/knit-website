@@ -24,9 +24,10 @@ export const Brand = () => {
         },
       }}
     >
-      <Typography className="fabric-text">FABRIC</Typography>
-      <img src={ fabricLogo } width="200px" />
       <KnitLogo />
+      <img src={ fabricLogo } width="200px" />
+      <Typography className="fabric-text">2024</Typography>
+
     </Stack>
   )  
 }

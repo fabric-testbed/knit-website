@@ -1,4 +1,4 @@
-export * from './cfp'
+export * from './cfa'
 export * from './home'
 export * from './not-found'
 export * from './registration'

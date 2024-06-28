@@ -2,8 +2,8 @@
 
 ## When
 
-- Workshop: Tuesday March 19, 2024 – Thursday March 21, 2024
-- Registration deadline: Friday March 1, 2024
+- Workshop: Tuesday September 24 - Friday September 27, 2024
+- Registration deadline: Monday, September 2, 2024
 
 ## Where
 
@@ -14,8 +14,8 @@ San Diego Supercomputer Center, UC San Diego
 ## Cost
 
 - **Full registration**
-  - Early Bird: $200 (ends Feb. 1, 2024)
+  - Early Bird: $200 (ends July. 31, 2024)
   - Regular: $300 
-- **Streaming pass**: $100
+- **Streaming pass**: $50
 - **Student**: $100
 - **Previous KNIT attendee**: $150
