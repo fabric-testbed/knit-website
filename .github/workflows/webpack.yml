@@ -31,6 +31,7 @@ jobs:
     needs: build
 
     permissions:
+      contents: write
       pages: write
       id-token: write
 
@@ -40,6 +41,23 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+
+    - name: Install dependencies and build
+      run: |
+        npm install
+        npx webpack
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: JamesIves/github-pages-deploy-action@v4.4.3
+      with:
+        branch: gh-pages
+        folder: dist  
+        token: ${{ secrets.GITHUB_TOKEN }}
