@@ -2,9 +2,9 @@
 
 ## Registration is Open!
 
-_March 19 – 21, 2024 | San Diego, CA_
+September 24 - 27, 2024 | Kansas City, MO
  
-KNIT 9 will take place March 19–21, 2024 in San Diego, CA. The event is hosted by the [San Diego Supercomputer Center](https://www.sdsc.edu/) and co-located with the [Fifth National Research Platform (5NRP)](https://nationalresearchplatform.org/) Workshop. It will be the first workshop since [FABRIC](https://fabric-testbed.net) entered full operations.
+KNIT 9 will take place September 24 - 27, 2024 in Kansas City, MO. The event is hosted by the [San Diego Supercomputer Center](https://www.sdsc.edu/) and co-located with the [Fifth National Research Platform (5NRP)](https://nationalresearchplatform.org/) Workshop. It will be the first workshop since [FABRIC](https://fabric-testbed.net) entered full operations.
 
 The last day to register is _March 1, 2024_.
 Previous KNIT attendees and students are eligible to receive discounted pricing.
