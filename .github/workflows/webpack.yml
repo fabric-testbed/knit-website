@@ -1,4 +1,4 @@
-name: NodeJS with Webpack
+name: Build and Deploy
 
 on:
   push:
@@ -6,59 +6,32 @@ on:
   pull_request:
     branches: [ "develop" ]
 
+permissions:
+  contents: write
+
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [14.x, 16.x, 18.x]
-
-    steps:
-    - uses: actions/checkout@v4
-
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-
-    - name: Build
-      run: |
-        npm install
-        npx webpack
-
-  deploy:
-    needs: build
-
-    permissions:
-      contents: write
-      pages: write
-      id-token: write
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 16
-
-    - name: Install dependencies and build
-      run: |
-        npm install
-        npx webpack
-
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: JamesIves/github-pages-deploy-action@v4.4.3
-      with:
-        branch: gh-pages
-        folder: dist  
-        token: ${{ secrets.GITHUB_TOKEN }}
-        clean: true
+  build-and-deploy:
+      runs-on: ubuntu-latest
+      
+      steps:
+        - uses: actions/checkout@v4
+    
+        - name: Use Node.js ${{ matrix.node-version }}
+          uses: actions/setup-node@v3
+          with:
+            node-version: ${{ matrix.node-version }}
+    
+        - name: Install dependencies
+          run: npm install
+    
+        - name: Build the project
+          run: npm run build
+    
+        - name: Deploy to GitHub Pages
+          if: github.ref == 'refs/heads/develop'
+          uses: JamesIves/github-pages-deploy-action@v4.4.3
+          with:
+            branch: gh-pages
+            folder: dist 
+            token: ${{ secrets.GITHUB_TOKEN }}
+            clean: true  
