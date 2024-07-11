@@ -38,5 +38,9 @@ main {
   background-attachment: fixed;
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=main.css.map*/
