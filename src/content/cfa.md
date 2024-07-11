@@ -1,25 +1,21 @@
 # Calls for Action
 
-## Calls for Demos
-Enim voluptate elit ad reprehenderit laborum laborum magna consequat nostrud. Et ut velit velit pariatur incididunt laborum id esse velit duis. Adipisicing aute do proident in cillum duis in dolore tempor ut in officia velit cillum quis. Sint enim sed nulla occaecat quis amet nostrud consequat commodo id irure quis.
-
-Enim voluptate elit ad reprehenderit laborum laborum magna consequat nostrud. Et ut velit velit pariatur incididunt laborum id esse velit duis. Adipisicing aute do proident in cillum duis in dolore tempor ut in officia velit cillum quis. Sint enim sed nulla occaecat quis amet nostrud consequat commodo id irure quis.
-
-<button linkTo="https://renci.org/" center="true">Call for Demos</button>
-
-## Calls for Tutorials
-Incididunt id aliquip cillum in aliqua quis qui mollit exercitation in laborum. Nisi in dolore occaecat minim cillum dolor ut cupidatat. Lorem ipsum esse consectetur proident dolor consequat duis sed duis magna ullamco aliquip ut ut reprehenderit minim aliqua laborum proident laborum. 
-
-Enim voluptate elit ad reprehenderit laborum laborum magna consequat nostrud. Et ut velit velit pariatur incididunt laborum id esse velit duis. Adipisicing aute do proident in cillum duis in dolore tempor ut in officia velit cillum quis. Sint enim sed nulla occaecat quis amet nostrud consequat commodo id irure quis.
-
-<button linkTo="https://renci.org/" center="true">Call for Tutorials</button>
-
-
 ## Calls for Presentations
-In sit magna pariatur laborum id cillum excepteur nulla tempor occaecat fugiat dolor ut quis duis do in enim. Magna et enim velit in sed officia ut ut ut voluptate.
+Call for Lightning Talks
 
-Incididunt id aliquip cillum in aliqua quis qui mollit exercitation in laborum. Nisi in dolore occaecat minim cillum dolor ut cupidatat. Lorem ipsum esse consectetur proident dolor consequat duis sed duis magna ullamco aliquip ut ut reprehenderit minim aliqua laborum proident laborum. 
+KNIT9 attendees have the opportunity to present lightning talks on the following topics:
 
-<button linkTo="https://renci.org/" center="true">Call for Presentations</button>
+1.  Enabling experimentation in various science domains
+2.  Getting started with FABRIC -- Unique features, useful tricks, sharable services
+3.  Experiments across FABRIC and other testbeds
+4.  Propose a compelling new topic
+
+These talks should show active FABRIC experiment views and results. For planned experiments, we encourage presenting planned topology and resources (FABRIC and other) as specific as possible.
+
+Submissions are due July 15 via our [submission form](https://docs.google.com/forms/d/1x-JXFHXTNgN6-wkqcoBcnFNAvkPdRSCIrX_poPTXazw/viewform?edit_requested=true).
+
+<div class="button-container">
+<button linkTo="https://docs.google.com/forms/d/1x-JXFHXTNgN6-wkqcoBcnFNAvkPdRSCIrX_poPTXazw/viewform?edit_requested=true" center="true">Call for Presentations</button>
+</div>
 
 For more questions, email [Chelsea Davis](mailto:cdavis@renci.org)

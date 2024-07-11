@@ -7,15 +7,17 @@
 
 ## Where
 
-San Diego Supercomputer Center, UC San Diego
-9836 Hopkins Drive, La Jolla CA 92093
-
+Kansas City, MO
 
 ## Cost
 
 - **Full registration**
-  - Early Bird: $200 (ends July. 31, 2024)
+  - Early Bird: $200 (ends July 31, 2024)
   - Regular: $300 
 - **Streaming pass**: $50
 - **Student**: $100
 - **Previous KNIT attendee**: $150
+
+<div class="button-container">
+<button linkTo="https://apps2.research.unc.edu/events/index.cfm?event=events.go&key=C2B2" center="true">Register Now</button>
+</div>
