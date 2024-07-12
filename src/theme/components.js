@@ -51,7 +51,7 @@ export const components = {
           ':hover': {
             backgroundColor: theme.palette.primary[700] ,
           },
-          margin: '0 1rem'
+          margin: '0.5rem 1rem'
         }),
       }),
     },

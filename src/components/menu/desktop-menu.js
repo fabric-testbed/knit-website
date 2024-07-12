@@ -33,9 +33,10 @@ export const DesktopMenu = ({ options = [] }) => {
           textDecoration: 'none',
           color: 'var(--knit-palette-primary-600)',
           textTransform: 'uppercase',
+          letterSpacing: '0.5px'
         },
         '[aria-current="page"]': {
-          backgroundColor: 'var(--knit-palette-secondary-light)',
+          backgroundColor: '#0001',
         },
       }}
     >
