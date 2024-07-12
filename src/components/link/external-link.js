@@ -12,6 +12,8 @@ export const ExternalLink = ({ to, children, button, ...props }) => {
           href={to}
           endDecorator={<ExternalLinkIcon color="#fff"/> }
           size="lg"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           {children}
         </Button>
