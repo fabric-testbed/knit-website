@@ -6,7 +6,7 @@ September 4 is the last day to reserve your room as part of the hotel block. Our
 
 > Residence Inn
 
-> 4601 Broadwas, Kansas City, MO 64112
+> 4601 Broadway Blvd, Kansas City, MO 64112
 
 Reservations can be made at the [hotel website](https://www.marriott.com/event-reservations/reservation-link.mi?id=1704930566970&key=GRP&app=resvlink).
 
