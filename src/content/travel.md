@@ -11,7 +11,7 @@ September 4 is the last day to reserve your room as part of the hotel block. Our
 Reservations can be made at the [hotel website](https://www.marriott.com/event-reservations/reservation-link.mi?id=1704930566970&key=GRP&app=resvlink).
 
 <div class="button-container">
-<button linkTo="https://renci.org/" center="true">Hotel Block Booking</button>
+<button linkTo="https://www.marriott.com/event-reservations/reservation-link.mi?id=1704930566970&key=GRP&app=resvlink" center="true">Hotel Block Booking</button>
 </div>
 
 ## Travel Stipends
