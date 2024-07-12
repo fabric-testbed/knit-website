@@ -13,7 +13,7 @@ and [register now](/register)!
 
 <div class="button-container">
 <button linkTo="/registration" center="true">Register Now</button>
-<button linkTo="/cfa" center="true">Call to Action</button>
+<button linkTo="/cfa" center="true">Calls for Action</button>
 </div>
 
 ##### Funding Details
