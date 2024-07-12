@@ -31,7 +31,7 @@ export const DesktopMenu = ({ options = [] }) => {
           width: '100%',
           p: 2,
           textDecoration: 'none',
-          color: 'var(--knit-palette-primary-600)',
+          color: 'var(--knit-palette-primary-900)',
           textTransform: 'uppercase',
           letterSpacing: '0.5px'
         },
