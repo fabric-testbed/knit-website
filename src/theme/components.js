@@ -41,4 +41,20 @@ export const components = {
       }),
     },
   },
+  JoyButton: {
+    styleOverrides: {
+      root: ({ ownerState, theme }) => ({
+        ...(ownerState.color === 'primary' && {
+          backgroundColor: theme.palette.primary[500] ,
+          color: theme.palette.primary.contrastText,
+          fontWeight: 400,
+          ':hover': {
+            backgroundColor: theme.palette.primary[700] ,
+          },
+          margin: '0 1rem'
+        }),
+      }),
+    },
+  },
+
 }
