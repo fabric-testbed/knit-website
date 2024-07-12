@@ -12,8 +12,8 @@ See what [travel accommodations](/travel) are available,
 and [register now](/register)!
 
 <div class="button-container">
-<button linkTo="/registration" center="true">Register Now</button>
-<button linkTo="/cfa" center="true">Calls for Action</button>
+<button linkto="/registration">Register Now</button>
+<button linkto="/cfa">Calls for Action</button>
 </div>
 
 ##### Funding Details

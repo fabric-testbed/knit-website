@@ -19,5 +19,5 @@ Kansas City, MO
 - **Previous KNIT attendee**: $150
 
 <div class="button-container">
-<button linkTo="https://apps2.research.unc.edu/events/index.cfm?event=events.go&key=C2B2" center="true">Register Now</button>
+<button linkto="https://apps2.research.unc.edu/events/index.cfm?event=events.go&key=C2B2">Register Now</button>
 </div>

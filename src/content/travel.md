@@ -8,10 +8,10 @@ September 4 is the last day to reserve your room as part of the hotel block. Our
 
 > 4601 Broadway Blvd, Kansas City, MO 64112
 
-Reservations can be made at the [hotel website](https://www.marriott.com/event-reservations/reservation-link.mi?id=1704930566970&key=GRP&app=resvlink).
+Reservations can be made at the [hotel website](https://www.marriott.com/event-reservations/reservation-link.mi?id=1717098427388&key=GRP&app=resvlink).
 
 <div class="button-container">
-<button linkTo="https://www.marriott.com/event-reservations/reservation-link.mi?id=1704930566970&key=GRP&app=resvlink" center="true">Hotel Block Booking</button>
+<button linkto="https://www.marriott.com/event-reservations/reservation-link.mi?id=1717098427388&key=GRP&app=resvlink">Hotel Block Booking</button>
 </div>
 
 ## Travel Stipends
@@ -27,5 +27,5 @@ Important Note: In order to receive travel grant reimbursements, you are require
 Applications are due July 15 via our [application form](https://docs.google.com/forms/d/e/1FAIpQLSfxRFxaMFc5ZiPyg94vRhHtHUdDb-8I_qlxaZwXxYZO4SpzzQ/viewform).
 
 <div class="button-container">
-<button linkTo="https://docs.google.com/forms/d/e/1FAIpQLSfxRFxaMFc5ZiPyg94vRhHtHUdDb-8I_qlxaZwXxYZO4SpzzQ/viewform" center="true">Travel Stipend Application</button>
+<button linkto="https://docs.google.com/forms/d/e/1FAIpQLSfxRFxaMFc5ZiPyg94vRhHtHUdDb-8I_qlxaZwXxYZO4SpzzQ/viewform">Travel Stipend Application</button>
 </div>

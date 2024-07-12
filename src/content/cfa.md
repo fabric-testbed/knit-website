@@ -15,7 +15,7 @@ These talks should show active FABRIC experiment views and results. For planned 
 Submissions are due July 15 via our [submission form](https://docs.google.com/forms/d/1x-JXFHXTNgN6-wkqcoBcnFNAvkPdRSCIrX_poPTXazw/viewform?edit_requested=true).
 
 <div class="button-container">
-<button linkTo="https://docs.google.com/forms/d/1x-JXFHXTNgN6-wkqcoBcnFNAvkPdRSCIrX_poPTXazw/viewform?edit_requested=true" center="true">Call for Presentations</button>
+<button linkto="https://docs.google.com/forms/d/1x-JXFHXTNgN6-wkqcoBcnFNAvkPdRSCIrX_poPTXazw/viewform?edit_requested=true">Call for Presentations</button>
 </div>
 
 For more questions, email [Chelsea Davis](mailto:cdavis@renci.org)
