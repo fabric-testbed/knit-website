@@ -1,5 +1,6 @@
 {
   "private": "true",
+  "homepage": "https://fabric-testbed.github.io/knit-website/",
   "scripts": {
     "start": "SERVE=true webpack serve",
     "watch": "webpack --watch",
