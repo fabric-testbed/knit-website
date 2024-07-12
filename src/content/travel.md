@@ -24,7 +24,7 @@ Travel grant applications will be evaluated on there ability to increase the div
 
 Important Note: In order to receive travel grant reimbursements, you are required to serve as an active note taker during the FABRIC KNIT Workshop sessions and fill out a feedback survey provided after the workshop. Should you be awarded, you will be given additional instructions for your note taking assignment.
 
-Applications are due July 1 via our [application form](https://docs.google.com/forms/d/e/1FAIpQLSfxRFxaMFc5ZiPyg94vRhHtHUdDb-8I_qlxaZwXxYZO4SpzzQ/viewform).
+Applications are due July 15 via our [application form](https://docs.google.com/forms/d/e/1FAIpQLSfxRFxaMFc5ZiPyg94vRhHtHUdDb-8I_qlxaZwXxYZO4SpzzQ/viewform).
 
 <div class="button-container">
 <button linkTo="https://docs.google.com/forms/d/e/1FAIpQLSfxRFxaMFc5ZiPyg94vRhHtHUdDb-8I_qlxaZwXxYZO4SpzzQ/viewform" center="true">Travel Stipend Application</button>
