@@ -26,6 +26,6 @@ Important Note: In order to receive travel grant reimbursements, you are require
 
 Applications are due July 1 via our [application form](https://docs.google.com/forms/d/e/1FAIpQLSfxRFxaMFc5ZiPyg94vRhHtHUdDb-8I_qlxaZwXxYZO4SpzzQ/viewform).
 
-<div>
+<div class="button-container">
 <button linkTo="https://docs.google.com/forms/d/e/1FAIpQLSfxRFxaMFc5ZiPyg94vRhHtHUdDb-8I_qlxaZwXxYZO4SpzzQ/viewform" center="true">Travel Stipend Application</button>
 </div>
