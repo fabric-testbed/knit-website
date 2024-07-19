@@ -9,7 +9,7 @@ KNIT 9, the next FABRIC Community Workshop, will take place September 24, 2024 i
 The last day to register is _Monday, September 2, 2024_.
 Previous KNIT attendees and students are eligible to receive discounted pricing.
 See what [travel accommodations](/travel) are available,
-and [register now](/register)!
+and [register now](/registration)!
 
 <div class="button-container">
 <button linkto="/registration">Register Now</button>
