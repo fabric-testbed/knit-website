@@ -1,8 +1,7 @@
 import { Button } from '@mui/joy'
 import { Link } from '@components/link'
-import { ExternalLinkIcon } from '../link'
-/* eslint-disable-next-line no-unused-vars */
-export const button = ({ node, linkto, children }) => {
+
+export const button = ({ linkto, children }) => {
   if (typeof children !== 'string') {
     return <Button>{ children }</Button>
   }

@@ -2,7 +2,6 @@ import { Fragment, useState } from 'react'
 import { Box, Divider, Drawer, IconButton, ModalClose, Stack } from '@mui/joy'
 import { Menu as MenuIcon } from 'react-feather'
 import { Link } from '@components/link'
-import { KnitLogo } from '@components/brand'
 import { menuPropTypes } from './menu'
 import numberlessKnitLogo from '@images/knit-logo-numberless-dark.png'
 
