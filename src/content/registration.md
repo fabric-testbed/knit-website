@@ -11,9 +11,6 @@ Kansas City, MO
 
 ## Cost
 
-- **Full registration**
-  - Early Bird: $200 (ends July 31, 2024)
-  - Regular: $300 
 - **Full KNIT-Only Registration**: $70
 
 *Please also stay the rest of the week for the MERIF Workshop. You can find the pricing information for MERIF on the registration link below.*
