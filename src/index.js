@@ -9,16 +9,7 @@ const root = createRoot(container)
 
 const ProvisionedApp = () => (
   <CssVarsProvider theme={ theme }>
-    <BrowserRouter basename={
-      // include basename in production deployment
-      // this is due to the way github pages deploys
-      // the base url for this site should be the 
-      // following for the purposes of DNS records.
-      // https://fabric-testbed.github.io/knit-website 
-      // this step is not necessary in development
-      process.env.NODE_ENV !== 'production'
-        ? '' : '/knit-website'
-    }>
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </CssVarsProvider>
