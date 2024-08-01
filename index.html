@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>FABRIC KNIT Workshop</title>
-    <script>
-        (function () {
-            var redirect = sessionStorage.redirect;
-            delete sessionStorage.redirect;
-            if (redirect && redirect != location.href) {
-                history.replaceState(null, null, redirect);
-            }
-        })();
-    </script>
     <link rel="icon" href="favicon.png">
     <script defer="defer" src="main.js"></script>
     <link href="main.css" rel="stylesheet">
 </head>
 <body>
+<script>
+    (function () {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+            history.replaceState(null, null, redirect);
+        }
+    })();
+</script>
 <div id="root"></div>
 </body>
 </html>
