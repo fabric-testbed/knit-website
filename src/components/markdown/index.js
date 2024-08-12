@@ -4,7 +4,7 @@ import rehypeRaw from 'rehype-raw'
 
 import { hr } from './hr'
 import { a } from './link'
-import { ul, li } from './list'
+import { ul, ol, li } from './list'
 import { pre } from './pre'
 import { button } from './button'
 import * as typography from './typography'
@@ -21,7 +21,7 @@ const componentMap = {
   a,
   hr,
   pre,
-  ul, li,
+  ul, ol, li,
   ...typography,
   button,
 }

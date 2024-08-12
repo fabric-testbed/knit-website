@@ -14,7 +14,7 @@ export const palette = {
     main: '#47aae1',
     light: '#93e1f1',
     dark: '#2e7197',
-    contrastText: 'rgba(0, 0, 0, 0.87)',
+    contrastText: 'rgba(255, 255, 255, 0.87)',
 
     solidBg: 'var(--knit-palette-primary-300)',
     solidActiveBg: 'var(--knit-palette-primary-300)',

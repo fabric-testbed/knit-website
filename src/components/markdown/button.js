@@ -1,8 +1,7 @@
 import { Button } from '@mui/joy'
 import { Link } from '@components/link'
 
-/* eslint-disable-next-line no-unused-vars */
-export const button = ({ node, linkto, children }) => {
+export const button = ({ linkto, children }) => {
   if (typeof children !== 'string') {
     return <Button>{ children }</Button>
   }
@@ -12,8 +11,11 @@ export const button = ({ node, linkto, children }) => {
 
   return (
     <Button
-      component={ Link }
+      component={Link}
       to={ linkto }
-    >{ children }</Button>
+      button
+      size="lg"
+     >{ children }
+    </Button>
   )
 }

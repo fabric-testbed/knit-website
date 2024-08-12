@@ -7,15 +7,14 @@
 
 ## Where
 
-San Diego Supercomputer Center, UC San Diego
-9836 Hopkins Drive, La Jolla CA 92093
-
+Kansas City, MO
 
 ## Cost
 
-- **Full registration**
-  - Early Bird: $200 (ends July. 31, 2024)
-  - Regular: $300 
-- **Streaming pass**: $50
-- **Student**: $100
-- **Previous KNIT attendee**: $150
+- **Full KNIT-Only Registration**: $70
+
+*Please also stay the rest of the week for the MERIF Workshop. You can find the pricing information for MERIF on the registration link below.*
+
+<div class="button-container">
+<button linkto="https://apps2.research.unc.edu/events/index.cfm?event=events.go&key=C2B2">Register Now</button>
+</div>
