@@ -1,9 +1,10 @@
 {
   "private": "true",
+  "homepage": "https://fabric-testbed.github.io/knit-website/",
   "scripts": {
     "start": "SERVE=true webpack serve",
     "watch": "webpack --watch",
-    "build": "NODE_ENV=production webpack",
+    "build": "NODE_ENV=production webpack && cp ./src/404.html ./dist/404.html",
     "build-dev": "webpack",
     "lint": "eslint ./src/index.js ./src/components/**/*.js",
     "lint:fix": "eslint --fix ./src/index.js ./src/components/**/*.js",

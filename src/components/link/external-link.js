@@ -1,18 +1,34 @@
 import { Fragment } from 'react'
 import { BaseLinkPropTypes } from './'
 import { ExternalLinkIcon } from './'
-import { Button } from '@mui/joy'
+import { Button, Link } from '@mui/joy'
 
-export const ExternalLink = ({ to, children, ...props }) => {
+export const ExternalLink = ({ to, children, button, ...props }) => {
   return (
     <Fragment>
-      <a
-        href={ to }
-        target="_blank"
-        rel="noopener noreferrer"
-        { ...props }
-      >{ children }</a>
-      <ExternalLinkIcon />
+      { button ? (
+        <Button
+          component="a"
+          href={to}
+          endDecorator={<ExternalLinkIcon color="#fff"/> }
+          size="lg"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {children}
+        </Button>
+      ) : (
+        <Fragment>
+          <Link
+            component={ button? "button": null}
+            href={ to }
+            target="_blank"
+            rel="noopener noreferrer"
+            { ...props }
+          >{ children }</Link>
+          <ExternalLinkIcon /> 
+        </Fragment>
+      )}
     </Fragment>
   )
 }

@@ -1,31 +1,31 @@
 import PropTypes from 'prop-types'
 import { Stack, Typography } from '@mui/joy'
 import { Link } from '@components/link'
-import fabricLogo from '@images/fabric-logo.png'
+import numberlessKnitLogo from '@images/knit-logo-numberless.png'
 
 export const Brand = () => {
   return (
     <Stack
       component={ Link } to="/"
       direction={{ sm: 'column', md: 'row' }}
-      alignItems="center"
-      gap={ 1 }
+      alignItems="flex-end"
+      gap={ 2 }
       sx={{
         textDecoration: 'none',
         '.fabric-text': {
           letterSpacing: '4px',
-          fontSize: '52px',
-          fontWeight: '100',
+          fontSize: '62px',
+          fontWeight: '300',
           background: '-webkit-linear-gradient(white, #47aae1)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           WebkitMaskImage: 'linear-gradient(white, #47aae1)',
           lineHeight: 1,
+          marginBottom: '0.3rem'
         },
       }}
     >
-      <KnitLogo />
-      <img src={ fabricLogo } width="200px" />
+      <img src={ numberlessKnitLogo } width="250px" />
       <Typography className="fabric-text">2024</Typography>
 
     </Stack>
