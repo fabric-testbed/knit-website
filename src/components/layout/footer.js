@@ -1,9 +1,8 @@
-import { Divider, List, ListItem, Sheet, Stack, Typography } from '@mui/joy'
+import { List, ListItem, Sheet, Stack, Typography } from '@mui/joy'
 import { KnitLogo } from '@components/brand'
 import { Link } from '@components/link'
 import {
   Container,
-  SIZES,
 } from '@components/layout'
 
 export const Footer = () => {

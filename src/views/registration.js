@@ -1,7 +1,7 @@
-import registration from '@content/registration.md'
+import Registration from '@content/registration.mdx'
 
 import { Page } from '@components/layout'
-import { Markdown } from '@components/markdown'
+import { componentMap } from "@components/markdown"
 
 export const RegistrationView = () => {
   return (
@@ -9,7 +9,7 @@ export const RegistrationView = () => {
       title="Registration"
       description="Register for the KNIT workshop"
     >
-      <Markdown>{ registration }</Markdown>
+      <Registration components={componentMap} />
     </Page>
   )
 }

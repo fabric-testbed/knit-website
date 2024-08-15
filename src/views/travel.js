@@ -1,7 +1,7 @@
-import travel from '@content/travel.md'
+import Travel from '@content/travel.mdx'
 
 import { Page } from '@components/layout'
-import { Markdown } from '@components/markdown'
+import { componentMap } from "@components/markdown"
 
 export const TravelView = () => {
   return (
@@ -9,7 +9,7 @@ export const TravelView = () => {
       title="Travel"
       description="View travel and lodging accommodations"
     >
-      <Markdown>{ travel }</Markdown>
+      <Travel components={componentMap} />
     </Page>
   )
 }
