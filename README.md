@@ -44,13 +44,14 @@ Content for this site is located in the src directory in a content folder. The c
         └── travel.mdx
 ```
 
-To update the content, ensure you are on the `content` branch via the dropdown menu, or, click this [link](https://github.com/fabric-testbed/knit-website/tree/content/src/content)).
+To update the content, ensure you are on the `content` branch via the dropdown menu, or, click this [link](https://github.com/fabric-testbed/knit-website/tree/content/src/content).
 
-![Screenshot 2024-08-15 at 1 22 19 PM](https://github.com/user-attachments/assets/94b0a507-766d-4dbe-a417-46a65a6ef78c)
+![Screenshot 2024-08-15 at 1 21 22 PM](https://github.com/user-attachments/assets/e7a1c2bb-229b-4143-b3d8-2d66a10ffa55)
+
 
 Then, navigate on the github UI to the file you'd like to change. Find the edit icon (pencil) and edit the text directly in the text editor. 
 
-![Screenshot 2024-08-15 at 1 21 22 PM](https://github.com/user-attachments/assets/e7a1c2bb-229b-4143-b3d8-2d66a10ffa55)
+![Screenshot 2024-08-15 at 1 22 19 PM](https://github.com/user-attachments/assets/94b0a507-766d-4dbe-a417-46a65a6ef78c)
 
 When you're changes are complete, click the "Commit changes ... " button. This will open a dialog box that will prompt you to write a commit message, optional description, email address, and the option to choose one of the following options:
 
