@@ -1,7 +1,7 @@
-import content from '@content/home.md'
+import Home from '@content/home.mdx'
 
 import { Page } from '@components/layout'
-import { Markdown } from '@components/markdown'
+import { componentMap } from "@components/markdown"
 
 export const HomeView = () => {
   return (
@@ -9,7 +9,7 @@ export const HomeView = () => {
       title="Home"
       description="Home of FABRIC's KNIT Worksop"
     >
-      <Markdown>{ content }</Markdown>
+      <Home components={componentMap} />
     </Page>
   )
 }
