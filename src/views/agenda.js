@@ -1,4 +1,5 @@
 import { Page } from '@components/layout'
+import knit9logo from '@images/KNIT9-logo.png'
 
 export const AgendaView = () => {
   return (
@@ -6,6 +7,7 @@ export const AgendaView = () => {
       title="Agenda"
       description="Agenda"
     >
+      <img src={ knit9logo } width="100%"/>
       <div style={{
         width: '100%',
         height: '2700px',
