@@ -8,12 +8,12 @@ export const AgendaView = () => {
     >
       <div style={{
         width: '100%',
-        height: '1150px',
+        height: '2700px',
         position: 'relative',
         overflow: 'hidden',
       }}>
         <iframe 
-          src="https://docs.google.com/document/d/1PW4NBZxc3GqD8ScMWWSixq8TJSoETfG1RDStaHAitG8/pub?embedded=true"
+          src="https://docs.google.com/document/d/1FKLaYOyQzHG5MnrP7RltSC_uGcyij49LcycZGy4o1RM/pub?embedded=true"
           style={{
             position: 'absolute',
             top: 0,
@@ -22,6 +22,7 @@ export const AgendaView = () => {
             right: 0,
             width: '100%',
             height: '100%',
+            border: 'none',
           }}
         ></iframe>
       </div>
