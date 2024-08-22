@@ -58,5 +58,4 @@ When you're changes are complete, click the "Commit changes ... " button. This w
  - Commit directly to the `content` branch
  - Create a **new branch** for this commit and start a pull request
 
-Please select the second option (Create a new branch for this commit and start a pull request). Our team will be notified of the pull request and will review and merge the requested changes. Or, you can contact a developer who can review and merge the changes based on your timeline and needs.
-
+Please select the first option (Commit directly to the `content` branch). Our team will be notified of the pull request and will review and merge the requested changes. Or, you can contact a developer who can review and merge the changes based on your timeline and needs.
