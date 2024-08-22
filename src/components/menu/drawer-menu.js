@@ -2,8 +2,8 @@ import { Fragment, useState } from 'react'
 import { Box, Divider, Drawer, IconButton, ModalClose, Stack } from '@mui/joy'
 import { Menu as MenuIcon } from 'react-feather'
 import { Link } from '@components/link'
-import { KnitLogo } from '@components/brand'
 import { menuPropTypes } from './menu'
+import numberlessKnitLogo from '@images/knit-logo-numberless-dark.png'
 
 //
 
@@ -31,7 +31,7 @@ export const DrawerMenu = ({ options = [] }) => {
             p: 2,
           }}
         >
-          <KnitLogo />
+        <img src={ numberlessKnitLogo } width="250px" />
           <ModalClose
             id="close-icon"
             sx={{ position: 'initial' }}
@@ -57,7 +57,7 @@ export const DrawerMenu = ({ options = [] }) => {
               backgroundColor: 'transparent',
               transition: 'background-color 250ms',
               '&:hover': {
-                'backgroundColor': 'var(--knit-palette-primary-100)',
+                backgroundColor: '#0001',
               },
             },
             '.list-item > a': {
@@ -68,7 +68,7 @@ export const DrawerMenu = ({ options = [] }) => {
               textTransform: 'uppercase',
             },
             '[aria-current="page"]': {
-              'backgroundColor': 'var(--knit-palette-primary-200)',
+                backgroundColor: '#0001',
             },
           }}
         >

@@ -1,6 +1,9 @@
-import { Divider, List, ListItem, Sheet, Stack, Typography } from '@mui/joy'
+import { List, ListItem, Sheet, Stack, Typography } from '@mui/joy'
 import { KnitLogo } from '@components/brand'
 import { Link } from '@components/link'
+import {
+  Container,
+} from '@components/layout'
 
 export const Footer = () => {
   return (
@@ -16,6 +19,7 @@ export const Footer = () => {
         p: 2, py: 6,
         '.copyright': {
           color: 'var(--knit-palette-primary-900)',
+          marginTop: '1rem'
         },
         '.links-list a': {
           color: 'var(--knit-palette-primary-400)',
@@ -25,43 +29,39 @@ export const Footer = () => {
         },
       }}
     >
-      <Stack
-        direction={{ xs: 'column', sm: 'row' }}
-        alignSelf="stretch"
-      >
+      <Container>
         <Stack
-          direction="column"
-          flex="1"
-          alignItems={{ xs: 'flex-start', sm: 'center' }}
+          direction={{ xs: 'column', sm: 'row' }}
+          alignContent="space-around"
         >
-          <List className="links-list">
-            <ListItem><Link to="#">link</Link></ListItem>
-            <ListItem><Link to="https://example.com/">here&apos;s an external link</Link></ListItem>
-            <ListItem><Link to="#">a link</Link></ListItem>
-            <ListItem><Link to="#">and another</Link></ListItem>
-          </List>
-        </Stack>
-        <Stack
-          direction="column"
-          flex="1"
-          alignItems={{ xs: 'flex-start', sm: 'center' }}
-        >
-          <List className="links-list">
-            <ListItem><Link to="#">another link</Link></ListItem>
-            <ListItem><Link to="https://example.com/">so many links</Link></ListItem>
-            <ListItem><Link to="https://example.com/">last one</Link></ListItem>
-          </List>
-        </Stack>
-      </Stack>
+          <Stack
+            direction="column"
+            flex="1"
+            alignItems={{ xs: 'flex-start', sm: 'flex-start' }}
+            justifyContent="center"
+          >
+            <KnitLogo size="medium" />
+            
+            <Typography 
+              align="center" 
+              className="copyright"
+            >&copy; { new Date().getFullYear() }</Typography>
+          </Stack>
 
-      <Divider sx={{ width: '50%', my: 3, mx: 'auto' }} />
+          <Stack
+            direction="column"
+            flex="1"
+            alignItems={{ xs: 'flex-start', sm: 'center' }}
+          >
+            <List className="links-list">
+              <ListItem><Link to="https://portal.fabric-testbed.net/">FABRIC Portal</Link></ListItem>
+              <ListItem><Link to="https://join.slack.com/t/fabric-3qa1674/shared_invite/zt-2jryx0baq-2U8yQNfqNGAP~r5vMz1hZg">Community Slack Channel</Link></ListItem>
+              <ListItem><Link to="https://portal.fabric-testbed.net/help">Contact Us</Link></ListItem>
+            </List>
+          </Stack>
+        </Stack>
+      </Container>
 
-      <KnitLogo size="small" />
-      
-      <Typography 
-        align="center" 
-        className="copyright"
-      >&copy; { new Date().getFullYear() }</Typography>
     </Sheet>
   )
 }

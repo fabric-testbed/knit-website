@@ -6,27 +6,29 @@ export const components = {
         color: theme.palette.primary[900],
         // color: 'var(--knit-palette-primary-900)',
         ...(ownerState.level === 'h1' && {
-          fontSize: '360%',
+          fontSize: '250%',
           color: theme.palette.primary[100],
           margin: '16px 0',
+          fontWeight: 600
         }),
         ...(ownerState.level === 'h2' && {
-          fontSize: '250%',
+          fontSize: '175%',
           color: theme.palette.primary[400],
           margin: '16px 0',
+          fontWeight: 500,
         }),
         ...(ownerState.level === 'h3' && {
-          fontSize: '200%',
+          fontSize: '150%',
           color: theme.palette.secondary[900],
           margin: '16px 0',
         }),
         ...(ownerState.level === 'h4' && {
-          fontSize: '166%',
+          fontSize: '130%',
           color: theme.palette.secondary[400],
           margin: '16px 0',
         }),
         ...(ownerState.level === 'h5' && {
-          fontSize: '130%',
+          fontSize: '120%',
           color: theme.palette.tertiary[600],
           margin: '16px 0',
         }),
@@ -39,4 +41,20 @@ export const components = {
       }),
     },
   },
+  JoyButton: {
+    styleOverrides: {
+      root: ({ ownerState, theme }) => ({
+        ...(ownerState.color === 'primary' && {
+          backgroundColor: theme.palette.primary[500] ,
+          color: theme.palette.primary.contrastText,
+          fontWeight: 400,
+          ':hover': {
+            backgroundColor: theme.palette.primary[700] ,
+          },
+          margin: '0.5rem 1rem'
+        }),
+      }),
+    },
+  },
+
 }

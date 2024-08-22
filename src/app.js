@@ -2,12 +2,12 @@ import { Fragment } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { Menu } from '@components/menu'
 import {
-  CfpView,
+  AgendaView,
+  CfaView,
   HomeView,
   MarkdownView,
   NotFoundView,
   RegistrationView,
-  SpeakersView,
   TravelView,
 } from './views'
 
@@ -25,20 +25,20 @@ const menuOptions = [
     view: <RegistrationView />,
   },
   {
-    path: '/cfp',
-    label: 'CFP',
-    view: <CfpView />,
-  },
-  {
     path: '/travel',
     label: 'Travel Info',
     view: <TravelView />,
   },
   {
-    path: '/speakers',
-    label: 'Speakers',
-    view: <SpeakersView />,
+    path: '/cfa',
+    label: 'Calls for Action',
+    view: <CfaView />,
   },
+  {
+    path: '/agenda',
+    label: 'Agenda',
+    view: <AgendaView />,
+  }
 ]
 
 //
