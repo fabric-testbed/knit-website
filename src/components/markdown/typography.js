@@ -1,15 +1,14 @@
 /* eslint-disable no-unused-vars */
 import { Typography } from '@mui/joy'
-import { LinkedHeading } from '@components/linked-heading'
 
 // heading 1
 export const h1 = ({ node, ...props }) => (
-  <LinkedHeading level="h1" { ...props } />
+  <Typography level="h1" { ...props } />
 )
 
 // heading 2
 export const h2 = ({ node, ...props }) => (
-  <LinkedHeading level="h2" { ...props } />
+  <Typography level="h2" { ...props } />
 )
 
 // heading 3

@@ -2,6 +2,7 @@ import { Fragment } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { Menu } from '@components/menu'
 import {
+  AgendaView,
   CfaView,
   HomeView,
   MarkdownView,
@@ -32,6 +33,11 @@ const menuOptions = [
     path: '/cfa',
     label: 'Calls for Action',
     view: <CfaView />,
+  },
+  {
+    path: '/agenda',
+    label: 'Agenda',
+    view: <AgendaView />,
   }
 ]
 

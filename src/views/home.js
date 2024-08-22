@@ -7,7 +7,7 @@ export const HomeView = () => {
   return (
     <Page
       title="Home"
-      description="Home of FABRIC's KNIT Worksop"
+      description="Home of FABRIC's KNIT Workshop"
     >
       <Home components={componentMap} />
     </Page>

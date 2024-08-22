@@ -29,7 +29,7 @@ export const Menu = ({ options = [] }) => {
       }}
     >
       {
-        width < theme.breakpoints.values.sm
+        width < theme.breakpoints.values.md
           ? <DrawerMenu options={ options } />
           : <DesktopMenu options={ options } />
       }
