@@ -2,7 +2,7 @@
 
 ## Hotel Block
 
-September 4 is the last day to reserve your room as part of the hotel block. Our team has reserved a hotel block from the evening of Monday September 23 through checkout on Friday September 27 at the Residence Inn.
+September 4, 2024 is the last day to reserve your room as part of the hotel block. Our team has reserved a hotel block from the evening of Monday September 23 through checkout on Friday September 27 at the Residence Inn.
 
 > Residence Inn
 
