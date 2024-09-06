@@ -7,10 +7,14 @@
   <title>FABRIC KNIT Workshop 404</title>
 
   <script>
-    sessionStorage.redirect = location.href;
+    const path = location.pathname.substr(1);
+    if (path && path !== '') {
+      location.replace('/#/' + path);
+      window.alert("path", path, "pathname", location.pathname)
+    } else {
+      location.replace('/#/');
+    }
   </script>
-
-  <meta http-equiv="refresh" content="0;URL='/'"></meta>
 </head>
 
 <body>
