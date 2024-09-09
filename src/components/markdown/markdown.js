@@ -6,7 +6,6 @@ import { hr } from './hr'
 import { a } from './link'
 import { ul, ol, li } from './list'
 import { pre } from './pre'
-import { button } from '../button'
 import * as typography from './typography'
 
 /*
