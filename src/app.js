@@ -9,6 +9,7 @@ import {
   NotFoundView,
   RegistrationView,
   TravelView,
+  Knit9View
 } from './views'
 
 import { Header, Footer } from '@components/layout'
@@ -38,6 +39,11 @@ const menuOptions = [
     path: '/agenda',
     label: 'Agenda',
     view: <AgendaView />,
+  },
+  {
+    path: '/knit9',
+    label: 'Knit9',
+    view: <Knit9View />,
   }
 ]
 
