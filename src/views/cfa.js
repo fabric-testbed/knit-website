@@ -5,7 +5,7 @@ import { componentMap } from "@components/markdown"
 
 export const CfaView = () => {
   return (
-    <Page title="Call for Proposals">
+    <Page title="Calls for Action">
       <Cfp components={componentMap} />
     </Page>
   )

@@ -7,7 +7,8 @@ export const AgendaView = () => {
       title="Agenda"
       description="Agenda"
     >
-      <img src={ knit9logo } width="100%"/>
+      Stay tuned for updates
+      {/* <img src={ knit9logo } width="100%"/>
       <div style={{
         width: '100%',
         height: '2700px',
@@ -27,7 +28,7 @@ export const AgendaView = () => {
             border: 'none',
           }}
         ></iframe>
-      </div>
+      </div> */}
     </Page>
   )
 }
