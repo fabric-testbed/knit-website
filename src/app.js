@@ -33,12 +33,12 @@ const menuOptions = [
     path: '/cfa',
     label: 'Calls for Action',
     view: <CfaView />,
-  },
-  {
-    path: '/agenda',
-    label: 'Agenda',
-    view: <AgendaView />,
   }
+  // {
+  //   path: '/agenda',
+  //   label: 'Agenda',
+  //   view: <AgendaView />,
+  // }
 ]
 
 //
