@@ -4,5 +4,5 @@ export * from './home'
 export * from './not-found'
 export * from './registration'
 export * from './travel'
-
+export * from './past-knits'
 export * from './__markdown'

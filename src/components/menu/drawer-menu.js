@@ -1,41 +1,65 @@
-import { Fragment, useState } from 'react'
-import { Box, Divider, Drawer, IconButton, ModalClose, Stack } from '@mui/joy'
-import { Menu as MenuIcon } from 'react-feather'
-import { Link } from '@components/link'
-import { menuPropTypes } from './menu'
-import numberlessKnitLogo from '@images/knit-logo-numberless-dark.png'
-
-//
+import { Fragment, useState } from 'react';
+import PropTypes from 'prop-types';
+import { Box, Divider, Drawer, IconButton, ModalClose, Stack } from '@mui/joy';
+import { Menu as MenuIcon } from 'react-feather';
+import { Link } from '@components/link';
+import numberlessKnitLogo from '@images/knit-logo-numberless-dark.png';
 
 export const DrawerMenu = ({ options = [] }) => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
+
+  // Helper function to flatten subItems and subsubItems
+  const transformMenuOptions = (menuOptions) =>
+    menuOptions.map(({ label, path, subItems = [], ...rest }) => {
+      // Flatten subItems and subsubItems, omitting "Additional KNITs"
+      if (label === 'Additional KNITs') {
+        return subItems.flatMap((sub) => sub.subsubItems || sub);
+      }
+
+      return {
+        label,
+        path,
+        subItems: subItems.flatMap((sub) => (sub.subsubItems ? sub.subsubItems : sub)),
+        ...rest,
+      };
+    });
+
+  // Render menu items recursively
+  const renderMenuItems = (items, level = 0) =>
+    items.flatMap(({ label, path, subItems = [] }) => [
+      <li
+        key={path || label} // Fallback to label if path is not available
+        className="list-item"
+        onClick={() => setOpen(false)}
+        style={{ paddingLeft: `${level * 16}px` }} // Indentation for hierarchy
+      >
+        {path ? (
+          <Link nav to={path}>
+            {label}
+          </Link>
+        ) : (
+          <span>{label}</span>
+        )}
+      </li>,
+      ...renderMenuItems(subItems, level + 1), // Recursively render subItems
+    ]);
+
+  const transformedOptions = transformMenuOptions(options);
 
   return (
     <Fragment>
       <IconButton
         variant="outlined"
         color="neutral"
-        onClick={ () => setOpen(true) }
+        onClick={() => setOpen(true)}
         sx={{ mx: 2 }}
       >
         <MenuIcon />
       </IconButton>
-      <Drawer
-        open={ open }
-        onClose={ () => setOpen(false) }
-      >
-        <Stack
-          direction="row"
-          justifyContent="space-between"
-          sx={{
-            p: 2,
-          }}
-        >
-        <img src={ numberlessKnitLogo } width="250px" />
-          <ModalClose
-            id="close-icon"
-            sx={{ position: 'initial' }}
-          />
+      <Drawer open={open} onClose={() => setOpen(false)}>
+        <Stack direction="row" justifyContent="space-between" sx={{ p: 2 }}>
+          <img src={numberlessKnitLogo} width="250px" />
+          <ModalClose id="close-icon" sx={{ position: 'initial' }} />
         </Stack>
 
         <Divider />
@@ -68,25 +92,35 @@ export const DrawerMenu = ({ options = [] }) => {
               textTransform: 'uppercase',
             },
             '[aria-current="page"]': {
-                backgroundColor: '#0001',
+              backgroundColor: '#0001',
             },
           }}
         >
-          {
-            options.map(({ label, path }) => (
-              <li
-                key={ path }
-                className="list-item"
-                onClick={ () => setOpen(false) }
-              >
-                <Link nav to={ path }>{ label }</Link>
-              </li>
-            ))
-          }
+          {renderMenuItems(transformedOptions)}
         </Box>
       </Drawer>
     </Fragment>
-  )
-}
+  );
+};
 
-DrawerMenu.propTypes = { ...menuPropTypes }
+// Explicitly define prop-types
+DrawerMenu.propTypes = {
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      path: PropTypes.string, // Can be undefined for non-clickable menu items
+      subItems: PropTypes.arrayOf(
+        PropTypes.shape({
+          label: PropTypes.string.isRequired,
+          path: PropTypes.string,
+          subsubItems: PropTypes.arrayOf(
+            PropTypes.shape({
+              label: PropTypes.string.isRequired,
+              path: PropTypes.string,
+            })
+          ),
+        })
+      ),
+    })
+  ),
+};

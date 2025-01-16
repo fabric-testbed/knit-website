@@ -19,12 +19,11 @@ export const Menu = ({ options = [] }) => {
         display: 'flex',
         justifyContent: 'flex-start',
         alignItems: 'center',
-        height: '60px',
         border: 'solid var(--knit-palette-primary-700)',
         borderWidth: '1px 0',
         position: 'sticky',
         top: 0,
-        overflow: 'hidden',
+        overflow: 'visible',
         zIndex: 9,
       }}
     >
@@ -43,8 +42,24 @@ export const Menu = ({ options = [] }) => {
 export const menuPropTypes = PropTypes.arrayOf(
   PropTypes.shape({
     label: PropTypes.string.isRequired,
-    path: PropTypes.string.isRequired,
+    path: PropTypes.string,
+    view: PropTypes.element,
+    external: PropTypes.bool,
+    subItems: PropTypes.arrayOf(
+      PropTypes.shape({
+        label: PropTypes.string.isRequired,
+        path: PropTypes.string,
+        external: PropTypes.bool,
+        subsubItems: PropTypes.arrayOf(
+          PropTypes.shape({
+            label: PropTypes.string.isRequired,
+            path: PropTypes.string,
+            external: PropTypes.bool,
+          })
+        ),
+      })
+    ),
   }).isRequired,
-).isRequired
+).isRequired;
 
-Menu.propTypes = { ...menuPropTypes }
+Menu.propTypes = { options: menuPropTypes };
