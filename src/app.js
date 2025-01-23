@@ -11,7 +11,7 @@ import {
   TravelView,
 } from './views'
 
-import { Header, Footer } from '@components/layout'
+import { Header, Footer, Banner } from '@components/layout'
 
 const menuOptions = [
   {
@@ -41,12 +41,11 @@ const menuOptions = [
   // }
 ]
 
-//
-
 export const App = () => {
   return (
     <Fragment>
       <Header />
+      <Banner />
       <Menu options={ menuOptions } />
       <main>
         <Routes>
