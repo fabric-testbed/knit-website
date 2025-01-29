@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { NavLink, useLocation } from 'react-router-dom'
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+import { ChevronDownIcon } from '../../icons/chevron-icons'
 import { MenuContainer, MenuLink, MenuItem  } from './menuComponents'
 import { Submenu, SubmenuHeader } from './submenuComponents'
 
@@ -39,7 +39,7 @@ export const DesktopMenu = ({ options = [] }) => {
                 aria-label={`${label} submenu`}
               >
                 {label}
-                <ExpandMoreIcon size={16} />
+                <ChevronDownIcon size={ 16 } fill="var(--knit-palette-primary-900)"/>
               </SubmenuHeader>
               {openSubmenu === index && <Submenu items={subItems} />}
             </>
