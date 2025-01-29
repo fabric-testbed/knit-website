@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom'
 import { styled } from '@mui/system'
 import { Box } from '@mui/joy'
 import { Link } from '@components/link'
+import { ChevronRightIcon } from '../../icons/chevron-icons'
 
 export const SubmenuHeader = styled(Box)(({ active }) => ({
   display: 'flex',
@@ -107,6 +108,9 @@ export const Submenu = ({ items }) => {
               aria-current={isActive(path) ? 'page' : undefined}
             >
               {label}
+              {subsubItems && (
+                <ChevronRightIcon size={ 16 } fill="var(--knit-palette-primary-900)"/>
+              )}
             </SubMenuLink>
             {subsubItems && openSubSubmenu === index && (
               <SubSubmenu items={subsubItems} />
