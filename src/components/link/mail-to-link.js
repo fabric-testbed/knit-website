@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { BaseLinkPropTypes } from './'
-import { MailtoLinkIcon } from './'
+import { MailtoLinkIcon } from '../icons'
 
 export const MailtoLink = ({ to, children }) => {
   return (

@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { BaseLinkPropTypes } from './'
-import { ExternalLinkIcon } from './'
+import { ExternalLinkIcon } from '../icons'
 import { Button, Link } from '@mui/joy'
 
 export const ExternalLink = ({ to, children, button, ...props }) => {
