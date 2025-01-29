@@ -12,7 +12,7 @@ import {
   Knit9View,
 } from './views'
 
-import { Header, Footer } from '@components/layout'
+import { Header, Footer, Banner } from '@components/layout'
 
 const pastKnits = [
   { path: '/past-knits/knit9', label: 'KNIT 9'},
@@ -45,6 +45,7 @@ export const App = () => {
   return (
     <Fragment>
       <Header />
+      <Banner />
       <Menu options={ menuOptions } />
       <main>
         <Routes>
