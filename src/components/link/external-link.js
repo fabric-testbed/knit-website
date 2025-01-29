@@ -25,8 +25,8 @@ export const ExternalLink = ({ to, children, button, ...props }) => {
             target="_blank"
             rel="noopener noreferrer"
             { ...props }
-          >{ children }</Link>
-          <ExternalLinkIcon /> 
+          >{ children }<ExternalLinkIcon /> </Link>
+          
         </Fragment>
       )}
     </Fragment>
