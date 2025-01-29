@@ -11,6 +11,7 @@ export const SubmenuHeader = styled(Box)(({ active }) => ({
   justifyContent: 'center',
   alignItems: 'center',
   padding: '0.5rem 0.75rem',
+  gap: '0.5rem',
   fontWeight: 400,
   cursor: 'pointer',
   height: '100%',
@@ -49,14 +50,22 @@ export const SubSubmenuWrapper = styled(Box)({
 })
 
 export const SubMenuLink = styled(Link)({
-  padding: '1rem 0',
+  padding: '0.5rem 0',
   width: '100%',
+  display: 'flex',
+  alignItems: 'center',
   textDecoration: 'none',
   color: 'var(--knit-palette-primary-900)',
   textTransform: 'uppercase',
   letterSpacing: '0.5px',
   textAlign: 'left',
   transition: 'background-color 250ms',
+  '& svg': {
+    marginLeft: '0.25rem'
+  },
+  '&:hover': {
+    textDecoration: 'none',
+  }
 })
 
 export const SubMenuItem = styled(Box)(({ active }) => ({
@@ -68,7 +77,7 @@ export const SubMenuItem = styled(Box)(({ active }) => ({
   backgroundColor: active ? '#0001' : 'transparent',
   transition: 'background-color 250ms',
   width: '100%',
-  padding: '0 1rem',
+  padding: '0 0.5rem',
   border: '1px solid #0001',
   '&:hover': {
     backgroundColor: '#0002',
@@ -77,10 +86,6 @@ export const SubMenuItem = styled(Box)(({ active }) => ({
   '[aria-current="page"]': {
     backgroundColor: '#0001',
     color: 'var(--knit-palette-primary-dark)',
-  },
-  a: {
-    textDecoration: 'none',
-    width: '100%',
   },
 }))
 
