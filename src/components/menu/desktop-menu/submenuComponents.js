@@ -50,9 +50,10 @@ export const SubSubmenuWrapper = styled(Box)({
 })
 
 export const SubMenuLink = styled(Link)({
-  padding: '0.5rem 0',
+  padding: '0.5rem',
   width: '100%',
   display: 'flex',
+  justifyContent: 'space-between',
   alignItems: 'center',
   textDecoration: 'none',
   color: 'var(--knit-palette-primary-900)',
@@ -71,13 +72,11 @@ export const SubMenuLink = styled(Link)({
 export const SubMenuItem = styled(Box)(({ active }) => ({
   position: 'relative',
   display: 'flex',
-  justifyContent: 'center',
   alignItems: 'center',
   height: '100%',
   backgroundColor: active ? '#0001' : 'transparent',
   transition: 'background-color 250ms',
   width: '100%',
-  padding: '0 0.5rem',
   border: '1px solid #0001',
   '&:hover': {
     backgroundColor: '#0002',
