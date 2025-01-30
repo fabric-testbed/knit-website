@@ -9,37 +9,37 @@ import {
   NotFoundView,
   RegistrationView,
   TravelView,
+  Knit9View,
 } from './views'
 
 import { Header, Footer, Banner } from '@components/layout'
 
-const menuOptions = [
+const pastKnits = [
+  { path: '/past-knits/knit9', label: 'KNIT 9'},
+  { path: 'https://learn.fabric-testbed.net/knowledge-base/knit-8-a-fabric-community-workshop/', label: 'KNIT 8' },
+  { path: 'https://learn.fabric-testbed.net/knowledge-base/knit-7-a-fabric-community-workshop/', label: 'KNIT 7' },
   {
-    path: '/',
-    label: 'Home',
-    view: <HomeView />,
+    label: 'Additional KNITs',
+    subsubItems: [
+      { path: 'https://learn.fabric-testbed.net/knowledge-base/knit-6-a-fabric-community-workshop/', label: 'KNIT 6' },
+      { path: 'https://learn.fabric-testbed.net/knowledge-base/knit-5-a-fabric-community-workshop/', label: 'KNIT 5' },
+      { path: 'https://learn.fabric-testbed.net/knowledge-base/knit-winter-21-a-fabric-community-workshop', label: 'KNIT 4' },
+    ],
   },
-  {
-    path: '/registration',
-    label: 'Registration',
-    view: <RegistrationView />,
-  },
-  {
-    path: '/travel',
-    label: 'Travel Info',
-    view: <TravelView />,
-  },
-  {
-    path: '/cfa',
-    label: 'Calls for Action',
-    view: <CfaView />,
-  }
-  // {
-  //   path: '/agenda',
-  //   label: 'Agenda',
-  //   view: <AgendaView />,
-  // }
 ]
+
+const menuOptions = [
+  { path: '/', label: 'Home' },
+  { path: '/registration', label: 'Registration' },
+  { path: '/travel', label: 'Travel Info' },
+  { path: '/cfa', label: 'Calls for Action' },
+  { path: '/agenda', label: 'Agenda' },
+  {
+    label: 'Past KNITs',
+    path: '/past-knits', // Parent path
+    subItems: pastKnits,
+  },
+];
 
 export const App = () => {
   return (
@@ -49,18 +49,15 @@ export const App = () => {
       <Menu options={ menuOptions } />
       <main>
         <Routes>
-          {
-            // we'll build the routes from the main menu items.
-            // note this implementation only supports a flat,
-            // one-level navigation structure.
-            menuOptions.map(({ path, view, label }) => (
-              <Route
-                key={ `route-${ label }` }
-                path={ path }
-                element={ view }
-              />
-            ))
-          }
+          <Route path="/" element={ <HomeView /> } />
+          <Route path="/registration" element={ <RegistrationView /> } />
+          <Route path="/travel" element={ <TravelView /> } />
+          <Route path="/cfa" element={ <CfaView /> } />
+          <Route path="/agenda" element={ <AgendaView /> } />
+          <Route path="/past-knits">
+            <Route path="knit9" element={ <Knit9View /> } />
+          </Route>
+
           <Route path="__markdown" element={ <MarkdownView /> } />
           <Route path="*" element={ <NotFoundView /> } />
         </Routes>
