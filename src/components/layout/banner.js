@@ -19,6 +19,13 @@ export const Banner = () => {
       "link": "https://docs.google.com/forms/d/e/1FAIpQLSeTp3i2iDhB7bHgN8ryMxZci8ya87yjeQd7_JMZImUodNinVA/viewform",
       "start_date": "2025-01-22 00:00:00+00:00",
       "button": ">>> Submit Form"
+    },
+    {
+      "content": "KNIT10 Call for Demos Now Open! Submit your demo by <b>February 24</b>.",
+      "end_date": "2025-02-25 00:00:00+00:00",
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLScRIWqHliNP3DFWBCnalYN_fBXJXVM0PpP9YWWJdSebC95TvA/viewform",
+      "start_date": "2025-02-02 00:00:00+00:00",
+      "button": ">>> Submit Demo"
     }
   ]
 
@@ -29,13 +36,31 @@ export const Banner = () => {
       size="md"
       variant="soft"
       key={`banner-${index}`}
+      sx={{
+        display: 'block',
+        textAlign: "center",
+        '--Grid-borderWidth': '1px',
+        borderTop: 'var(--Grid-borderWidth) solid',
+        borderLeft: 'var(--Grid-borderWidth) solid',
+        borderColor: 'divider',
+        '& > div': {
+          borderRight: 'var(--Grid-borderWidth) solid',
+          borderBottom: 'var(--Grid-borderWidth) solid',
+          borderColor: 'divider',
+        },
+      }}
     >
       <span>{Parser(banner.content)}
-      <Link 
+      <Link
         href={banner.link}
         target="_blank"
         rel="noreferrer"
-        sx={{ marginLeft: '20px' }}
+        sx={{
+          display: 'block',
+          marginLeft: '20px',
+          marginTop: '10px',
+          fontSize: '0.85rem'
+        }}
       >
         {banner.button}
       </Link></span>
