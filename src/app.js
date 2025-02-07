@@ -9,6 +9,7 @@ import {
   NotFoundView,
   RegistrationView,
   TravelView,
+  WorkshopView,
   Knit9View,
 } from './views'
 
@@ -34,6 +35,7 @@ const menuOptions = [
   { path: '/travel', label: 'Travel Info' },
   { path: '/cfa', label: 'Calls for Action' },
   { path: '/agenda', label: 'Agenda' },
+  { path: '/workshop', label: 'Workshop Materials' },
   {
     label: 'Past KNITs',
     path: '/past-knits', // Parent path
@@ -54,6 +56,7 @@ export const App = () => {
           <Route path="/travel" element={ <TravelView /> } />
           <Route path="/cfa" element={ <CfaView /> } />
           <Route path="/agenda" element={ <AgendaView /> } />
+          <Route path="/workshop" element={ <WorkshopView /> } />
           <Route path="/past-knits">
             <Route path="knit9" element={ <Knit9View /> } />
           </Route>
