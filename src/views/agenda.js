@@ -1,5 +1,4 @@
 import { Page } from '@components/layout'
-import knit9logo from '@images/KNIT9-logo.png'
 
 export const AgendaView = () => {
   return (
@@ -7,16 +6,14 @@ export const AgendaView = () => {
       title="Agenda"
       description="Agenda"
     >
-      Stay tuned for updates
-      {/* <img src={ knit9logo } width="100%"/>
       <div style={{
         width: '100%',
-        height: '2700px',
+        height: '3800px',
         position: 'relative',
         overflow: 'hidden',
       }}>
         <iframe 
-          src="https://docs.google.com/document/d/1FKLaYOyQzHG5MnrP7RltSC_uGcyij49LcycZGy4o1RM/pub?embedded=true"
+          src="https://docs.google.com/document/d/e/2PACX-1vS9cX7THv3GkdzV1DYYHeWgwa63NiiNowZKvI4z-knmn-CMaLIUWyhplQ1cCjMWreFR8C2ii4WdCX91/pub?embedded=true"
           style={{
             position: 'absolute',
             top: 0,
@@ -28,7 +25,7 @@ export const AgendaView = () => {
             border: 'none',
           }}
         ></iframe>
-      </div> */}
+      </div>
     </Page>
   )
 }
