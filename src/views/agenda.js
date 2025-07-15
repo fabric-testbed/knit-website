@@ -6,7 +6,7 @@ export const AgendaView = () => {
       title="Agenda"
       description="Agenda"
     >
-      <em>Agenda coming soon.</em>
+      <p style={{color: "#0075A9", "font-weight": "bold", "font-size": "1.5rem"}}>Agenda coming soon.</p>
     </Page>
   )
 }

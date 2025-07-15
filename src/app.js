@@ -11,11 +11,13 @@ import {
   TravelView,
   WorkshopView,
   Knit9View,
+  Knit10View
 } from './views'
 
 import { Header, Footer, Banner } from '@components/layout'
 
 const pastKnits = [
+  { path: '/past-knits/knit10', label: 'KNIT 10'},
   { path: '/past-knits/knit9', label: 'KNIT 9'},
   { path: 'https://learn.fabric-testbed.net/knowledge-base/knit-8-a-fabric-community-workshop/', label: 'KNIT 8' },
   { path: 'https://learn.fabric-testbed.net/knowledge-base/knit-7-a-fabric-community-workshop/', label: 'KNIT 7' },
@@ -58,9 +60,9 @@ export const App = () => {
           <Route path="/agenda" element={ <AgendaView /> } />
           <Route path="/workshop" element={ <WorkshopView /> } />
           <Route path="/past-knits">
+            <Route path="knit10" element={ <Knit10View /> } />
             <Route path="knit9" element={ <Knit9View /> } />
           </Route>
-
           <Route path="__markdown" element={ <MarkdownView /> } />
           <Route path="*" element={ <NotFoundView /> } />
         </Routes>
