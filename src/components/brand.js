@@ -6,28 +6,43 @@ import numberlessKnitLogo from '@images/knit-logo-numberless.png'
 export const Brand = () => {
   return (
     <Stack
-      component={ Link } to="/"
-      direction={{ sm: 'column', md: 'row' }}
-      alignItems="flex-end"
-      gap={ 2 }
+      direction={{ sm: 'column', md: 'column' }}
+      alignItems="center"
       sx={{
         textDecoration: 'none',
-        '.fabric-text': {
-          letterSpacing: '4px',
-          fontSize: '62px',
-          fontWeight: '300',
-          background: '-webkit-linear-gradient(white, #47aae1)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          WebkitMaskImage: 'linear-gradient(white, #47aae1)',
-          lineHeight: 1,
-          marginBottom: '0.3rem'
-        },
+        '.extra-text': {
+          fontSize: '1.2rem',
+          fontWeight: '600',
+          color: 'var(--knit-palette-primary-contrastText)',
+          textAlign: 'center',
+          marginTop: '0.8rem',
+        }
       }}
     >
-      <img src={ numberlessKnitLogo } width="250px" />
-      <Typography className="fabric-text">2025</Typography>
-
+      <Stack
+        component={ Link } to="/"
+        direction={{ sm: 'column', md: 'row' }}
+        alignItems="flex-end"
+        gap={ 2 }
+        sx={{
+          textDecoration: 'none',
+          '.fabric-text': {
+            letterSpacing: '4px',
+            fontSize: '62px',
+            fontWeight: '300',
+            background: '-webkit-linear-gradient(white, #47aae1)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            WebkitMaskImage: 'linear-gradient(white, #47aae1)',
+            lineHeight: 1,
+            marginBottom: '0.3rem'
+          }
+        }}
+      >
+        <img src={ numberlessKnitLogo } width="250px" />
+        <Typography className="fabric-text">2025</Typography>
+      </Stack>
+      <Typography className="extra-text">Powering Discovery: FABRIC Across the Sciences</Typography>
     </Stack>
   )  
 }
