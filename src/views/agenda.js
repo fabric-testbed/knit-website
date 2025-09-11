@@ -1,12 +1,14 @@
-import { Page } from '@components/layout'
-
 export const AgendaView = () => {
   return (
-    <Page
-      title="Agenda"
-      description="Agenda"
-    >
-      <p style={{color: "#0075A9", "font-weight": "bold", "font-size": "1.5rem"}}>Agenda coming soon.</p>
-    </Page>
+  <div style={{ width: "800px", margin: "0 auto", overflowX: "auto" }}>
+    <iframe 
+      src="https://docs.google.com/document/d/e/2PACX-1vRHlsu0cHuJU0LWS7uXE0fRaYYiGjdt1CFxERWkM6GJ32FBRQmFobyBN-rKOAVVDb6slpfviJShV1EE/pub?embedded=true"
+      style={{
+        width: "1000px",
+        height: "4000px",
+        border: "none"
+      }}
+    ></iframe>
+  </div>
   )
 }
