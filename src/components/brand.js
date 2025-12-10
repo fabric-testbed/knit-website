@@ -42,7 +42,7 @@ export const Brand = () => {
         <img src={ numberlessKnitLogo } width="250px" />
         <Typography className="fabric-text">2026</Typography>
       </Stack>
-      <Typography className="extra-text">From Coast to Coast and Beyond: Science Across Research. Networks</Typography>
+      <Typography className="extra-text">From Coast to Coast and Beyond: Science Across Research Networks</Typography>
     </Stack>
   )  
 }
