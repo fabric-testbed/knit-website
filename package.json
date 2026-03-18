@@ -1,5 +1,5 @@
 {
-  "private": "true",
+  "private": true,
   "homepage": "https://fabric-testbed.github.io/knit-website/",
   "scripts": {
     "start": "SERVE=true webpack serve",
@@ -30,7 +30,7 @@
     "raw-loader": "^4.0.2",
     "react-refresh": "^0.14.0",
     "remark-gfm": "^4.0.0",
-    "webpack": "^5.105.2",
+    "webpack": "^5.105.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.2.2"
   },

@@ -1,5 +1,6 @@
 export * from './agenda'
 export * from './cfa'
+export * from './workshop'
 export * from './home'
 export * from './not-found'
 export * from './registration'
