@@ -12,7 +12,7 @@ const plugins = [
   new MiniCssExtractPlugin(),
   new HtmlWebpackPlugin({
     template: './src/index.html',
-    favicon: './src/images/favicon.png',
+    favicon: './src/images/FABRIC_KNIT_yarnball_favicon.png',
   }),
   new ESLintPlugin({
     extensions: ['./src', 'js'],
