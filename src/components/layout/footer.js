@@ -54,6 +54,7 @@ export const Footer = () => {
             alignItems={{ xs: 'flex-start', sm: 'center' }}
           >
             <List className="links-list">
+              <ListItem><Link to="https://www.whatisfabric.net/">FABRIC Home</Link></ListItem>
               <ListItem><Link to="https://portal.fabric-testbed.net/">FABRIC Portal</Link></ListItem>
               <ListItem><Link to="https://join.slack.com/t/fabric-3qa1674/shared_invite/zt-2jryx0baq-2U8yQNfqNGAP~r5vMz1hZg">Community Slack Channel</Link></ListItem>
               <ListItem><Link to="https://portal.fabric-testbed.net/help">Contact Us</Link></ListItem>
