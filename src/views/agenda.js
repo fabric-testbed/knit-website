@@ -5,7 +5,7 @@ import { componentMap } from "@components/markdown"
 
 export const AgendaView = () => {
   return (
-    <Page title="Agenda" description="KNIT Workshop Agenda">
+    <Page title="Agenda" description="KNIT Workshop Agenda" size="lg">
       <Agenda components={componentMap} />
     </Page>
   )
