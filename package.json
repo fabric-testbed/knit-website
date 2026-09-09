@@ -41,7 +41,8 @@
     "launch-editor": "^2.14.1",
     "http-proxy-middleware": "^2.0.10",
     "js-yaml": "^4.2.0",
-    "ws": "^8.21.0"
+    "ws": "^8.21.0",
+    "qs": "^6.16.0"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
