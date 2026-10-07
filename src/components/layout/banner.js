@@ -1,13 +1,10 @@
 import { Alert as MUIAlert} from '@mui/joy'
 import Link from '@mui/joy/Link'
 import Parser from 'html-react-parser'
-import moment from 'moment';
 
 const checkNotExpired = (start, end) => {
-  const startUTC = start.substring(0, 19);
-  const stillStartUTC = moment.utc(startUTC).toDate();
-  const endUTC = end.substring(0, 19);
-  const stillEndUTC = moment.utc(endUTC).toDate();
+  const stillStartUTC = new Date(start);
+  const stillEndUTC = new Date(end);
   return stillEndUTC > new Date() && stillStartUTC < new Date();
 }
 

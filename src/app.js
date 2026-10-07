@@ -13,12 +13,14 @@ import {
   Knit9View,
   Knit10View,
   Knit11View,
-  Knit12View
+  Knit12View,
+  Knit13View
 } from './views'
 
 import { Header, Footer, Banner } from '@components/layout'
 
 const pastKnits = [
+  { path: '/past-knits/knit13', label: 'KNIT 13'},
   { path: '/past-knits/knit12', label: 'KNIT 12'},
   { path: '/past-knits/knit11', label: 'KNIT 11'},
   { path: '/past-knits/knit10', label: 'KNIT 10'},
@@ -64,6 +66,7 @@ export const App = () => {
           <Route path="/agenda" element={ <AgendaView /> } />
           <Route path="/workshop" element={ <WorkshopView /> } />
           <Route path="/past-knits">
+            <Route path="knit13" element={ <Knit13View /> } />
             <Route path="knit12" element={ <Knit12View /> } />
             <Route path="knit11" element={ <Knit11View /> } />
             <Route path="knit10" element={ <Knit10View /> } />
