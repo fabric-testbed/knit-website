@@ -40,9 +40,8 @@ export const Brand = () => {
         }}
       >
         <img src={ numberlessKnitLogo } width="250px" />
-        <Typography className="fabric-text">2026</Typography>
+        <Typography className="fabric-text">2027</Typography>
       </Stack>
-      <Typography className="extra-text">Networking for the Future</Typography>
     </Stack>
   )  
 }

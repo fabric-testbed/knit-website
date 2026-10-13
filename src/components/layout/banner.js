@@ -1,5 +1,5 @@
 import { Alert as MUIAlert} from '@mui/joy'
-import Link from '@mui/joy/Link'
+import MUIButton from '@mui/joy/Button'
 import Parser from 'html-react-parser'
 
 const checkNotExpired = (start, end) => {
@@ -11,18 +11,11 @@ const checkNotExpired = (start, end) => {
 export const Banner = () => {
   const banners = [
     {
-      "content": "FABRIC invites nominations for four awards recognizing innovative uses of FABRIC resources—Best Published Paper, Best FABRIC Matrix, Best FABRIC Experiment, and Best Classroom Use of FABRIC — submissions due by <b>Monday, February 24 at 11:59 PM ET</b>, and winners announced at KNIT10.",
-      "end_date": "2025-02-25 00:00:00+00:00",
-      "link": "https://docs.google.com/forms/d/e/1FAIpQLSeTp3i2iDhB7bHgN8ryMxZci8ya87yjeQd7_JMZImUodNinVA/viewform",
-      "start_date": "2025-01-22 00:00:00+00:00",
-      "button": ">>> Submit Form"
-    },
-    {
-      "content": "KNIT10 Call for Demos Now Open! Submit your demo by <b>February 24</b>.",
-      "end_date": "2025-02-25 00:00:00+00:00",
-      "link": "https://docs.google.com/forms/d/e/1FAIpQLScRIWqHliNP3DFWBCnalYN_fBXJXVM0PpP9YWWJdSebC95TvA/viewform",
-      "start_date": "2025-02-02 00:00:00+00:00",
-      "button": ">>> Submit Demo"
+      "content": "FABRIC invites nominations for four awards recognizing innovative uses of FABRIC resources—Best Published Paper, Best FABRIC Matrix, Best FABRIC Experiment, and Best Classroom Use of FABRIC. Due <b>February 12, 2027</b>. Winners announced at KNIT14.",
+      "end_date": "2027-02-13 00:00:00+00:00",
+      "link": "https://forms.gle/zNDSryReJbrKpjE67",
+      "start_date": "2026-10-13 00:00:00+00:00",
+      "button": "Nominate Now"
     }
   ]
 
@@ -34,33 +27,26 @@ export const Banner = () => {
       variant="soft"
       key={`banner-${index}`}
       sx={{
-        display: 'block',
-        textAlign: "center",
-        '--Grid-borderWidth': '1px',
-        borderTop: 'var(--Grid-borderWidth) solid',
-        borderLeft: 'var(--Grid-borderWidth) solid',
-        borderColor: 'divider',
-        '& > div': {
-          borderRight: 'var(--Grid-borderWidth) solid',
-          borderBottom: 'var(--Grid-borderWidth) solid',
-          borderColor: 'divider',
-        },
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: 2,
+        py: 1.5,
       }}
     >
-      <span>{Parser(banner.content)}
-      <Link
+      <span>{Parser(banner.content)}</span>
+      <MUIButton
+        component="a"
         href={banner.link}
         target="_blank"
         rel="noreferrer"
-        sx={{
-          display: 'block',
-          marginLeft: '20px',
-          marginTop: '10px',
-          fontSize: '0.85rem'
-        }}
+        size="sm"
+        color="warning"
+        variant="solid"
+        sx={{ whiteSpace: 'nowrap' }}
       >
         {banner.button}
-      </Link></span>
+      </MUIButton>
     </MUIAlert>))
   )
 }
